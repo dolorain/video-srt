@@ -3,13 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
+	"https://github.com/dolorain/video-srt"
 	"os"
 	"path/filepath"
 	"time"
-	"videosrt/videosrt"
 )
 
-//定义配置文件
+// 定义配置文件
 const CONFIG = "config.ini"
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 
 	//初始化
 	if len(os.Args) < 2 {
-		os.Args = append(os.Args , "")
+		os.Args = append(os.Args, "")
 	}
 
 	var video string
